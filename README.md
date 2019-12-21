@@ -1,2 +1,1 @@
-# leaningjava01
-hello
+# leaningjava

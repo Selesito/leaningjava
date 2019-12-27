@@ -35,8 +35,8 @@ public class SqMaxTest {
     }
     @Test
     public void whenp6k2s2222() {
-        int expected = 6;
-        int s = SqMax.max(6, 6, 6, 1);
+        int expected = 8;
+        int s = SqMax.max(5, 4, 6, 8);
         assertThat(s, is(expected));
     }
 }

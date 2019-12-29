@@ -1,6 +1,5 @@
-package learningjava.condition;
+package leaningjava.condition;
 
-import learningjava.calculator.Fit;
 import org.junit.Assert;
 import org.junit.Test;
 import ru.job4j.condition.Point;

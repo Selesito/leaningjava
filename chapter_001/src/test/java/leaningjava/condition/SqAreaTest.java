@@ -1,5 +1,4 @@
-package learningjava.condition;
-import learningjava.calculator.Fit;
+package leaningjava.condition;
 import org.junit.Assert;
 import org.junit.Test;
 import ru.job4j.condition.SqArea;

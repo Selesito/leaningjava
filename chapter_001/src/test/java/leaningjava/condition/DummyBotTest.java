@@ -1,6 +1,5 @@
 package leaningjava.condition;
 
-import learningjava.condition.DummyBot;
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;

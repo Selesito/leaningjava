@@ -1,6 +1,4 @@
 package leaningjava.loop;
-import learningjava.condition.Max;
-import learningjava.loop.Counter;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;

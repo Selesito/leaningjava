@@ -1,7 +1,6 @@
 package leaningjava.condition;
 
 
-import learningjava.condition.SqMax;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;

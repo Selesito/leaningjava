@@ -1,4 +1,4 @@
-package learningjava.calculator;
+package leaningjava.calculator;
 
 
 import org.junit.Assert;

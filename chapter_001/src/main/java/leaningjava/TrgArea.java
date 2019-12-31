@@ -1,4 +1,4 @@
-package learningjava;
+package leaningjava;
 
 public class TrgArea {
     public static double area (double a, double b, double c) {

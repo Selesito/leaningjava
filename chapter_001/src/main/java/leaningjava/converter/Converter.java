@@ -1,4 +1,4 @@
-package learningjava.converter;
+package leaningjava.converter;
 
 public class Converter {
 

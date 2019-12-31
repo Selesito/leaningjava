@@ -1,4 +1,4 @@
-package learningjava.condition;
+package leaningjava.condition;
 
 public class SqMax {
     public static int max(int first, int second, int third, int forth) {

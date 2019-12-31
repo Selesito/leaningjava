@@ -1,4 +1,4 @@
-package learningjava.condition;
+package leaningjava.condition;
 
 public class MultiMax {
     public int max(int first, int second, int third) {

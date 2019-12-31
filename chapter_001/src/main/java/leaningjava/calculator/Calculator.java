@@ -1,4 +1,4 @@
-package learningjava.calculator;
+package leaningjava.calculator;
 
 public class Calculator {
     public static void add(double first, double second) {

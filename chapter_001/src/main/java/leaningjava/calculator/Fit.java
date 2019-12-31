@@ -1,4 +1,4 @@
-package learningjava.calculator;
+package leaningjava.calculator;
 
 public class Fit {
     public static double manWeight (double height) {

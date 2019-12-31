@@ -1,4 +1,4 @@
-package learningjava;
+package leaningjava;
 
 public class Main {
 }

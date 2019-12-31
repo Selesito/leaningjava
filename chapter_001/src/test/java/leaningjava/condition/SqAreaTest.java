@@ -1,6 +1,8 @@
 package leaningjava.condition;
 
-import learningjava.condition.SqArea;
+
+import leaningjava.condition.SqArea;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.hamcrest.Matchers.is;
@@ -25,5 +27,7 @@ public class SqAreaTest {
         int s = SqArea.square(p, k);
         assertThat(s, is(expected));
     }
+
+
 
 }

@@ -1,4 +1,4 @@
-package learningjava.condition;
+package leaningjava.condition;
 
 public class Max {
     public static int max(int left, int right) {

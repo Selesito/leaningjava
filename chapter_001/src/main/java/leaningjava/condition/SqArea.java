@@ -1,4 +1,4 @@
-package learningjava.condition;
+package leaningjava.condition;
 
 public class SqArea {
     public static int square(int p, int k) {

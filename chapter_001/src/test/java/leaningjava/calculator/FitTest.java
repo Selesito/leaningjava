@@ -9,7 +9,7 @@ public class FitTest {
     public void manWeight() {
         int in = 182;
         double expected = 94.3;
-        double out =Fit.manWeight(in);
+        double out = Fit.manWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
 

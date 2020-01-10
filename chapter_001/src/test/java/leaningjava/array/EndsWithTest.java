@@ -25,7 +25,7 @@ public class EndsWithTest {
     @Test
     public void whenNotStartWithPrefixThenFalse2() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] post = {'l','l', 'a'};
+        char[] post = {'l', 'l', 'a'};
         boolean result = EndsWith.endsWith(word, post);
         assertThat(result, is(false));
     }

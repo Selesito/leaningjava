@@ -2,7 +2,7 @@ package ru.job4j.condition;
 
 public class SqArea {
     public static double square(int p, int k) {
-        double height = p / (2.0 *(k +1));
+        double height = p / (2.0 * (k + 1));
         double length = height * k;
         double area = height * length;
         return area;

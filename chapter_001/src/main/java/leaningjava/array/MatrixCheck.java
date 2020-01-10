@@ -6,18 +6,18 @@ public class MatrixCheck {
         for (int row = 0; row < board.length; row++) {
              char sign = board[row][row];
              System.out.print(sign);
-             int countRow =0;
-             int countCell =0;
-             if(sign=='X'){
-                 for (int i = 0; i!=board.length; i++) {
+             int countRow = 0;
+             int countCell = 0;
+             if (sign == 'X') {
+                 for (int i = 0; i != board.length; i++) {
                      if (board[row][i] == 'X') {
                          countRow++;
                      }
                      if (board[i][row] == 'X') {
                          countCell++;
                      }
-                     if(countRow==board.length||countCell==board.length){
-                         result=true;
+                     if (countRow == board.length || countCell == board.length) {
+                         result = true;
                          break;
                      }
                  }

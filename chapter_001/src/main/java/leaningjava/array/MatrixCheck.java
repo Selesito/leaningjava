@@ -4,46 +4,32 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int row = 0; row < board.length; row++) {
-            for (int cell = 0; cell < board.length; cell++) {
-                char sign = board[row][cell];
-                System.out.print(sign);
-                int count =0;
-                for (int x =0; x<5;x++) {
-                    if(board[x][x]=='X'){
-                        count=0;
-                        for (int i = 0; i!=board.length; i++){
+             char sign = board[row][row];
+             System.out.print(sign);
+             int countRow =0;
+             int countCell =0;
+             if(sign=='X'){
+                 for (int i = 0; i!=board.length; i++) {
+                     if (board[row][i] == 'X') {
+                         countRow++;
+                     }
+                     if (board[i][row] == 'X') {
+                         countCell++;
+                     }
+                     if(countRow==board.length||countCell==board.length){
+                         result=true;
+                         break;
+                     }
+                 }
 
-                            if (board[x][i]=='X'){
-                                count++;
-                            }
-                            if (count==5){
-                                result=true;
-                                break;
-                            }
-                        }
-                        count=0;
-                        for (int j = 0; j!=board.length; j++){
 
-                            if (board[j][x]=='X'){
-                                count++;
-                            }
-                            if (count==5){
-                                result=true;
-                                break;
-                            }
-                        }
+             }
 
-                    }
-
-                    }
-
-                //for () { проверить последовательность.
-//                for ()
-            }
-            System.out.println();
         }
+        System.out.println();
+
         return result;
-    }
+}
 
     public static void main(String[] args) {
         char[][] hasWinVertical = {

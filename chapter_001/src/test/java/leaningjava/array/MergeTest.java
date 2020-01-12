@@ -44,10 +44,10 @@ public class MergeTest {
     @Test
     public void whenLeftGreat() {
         Merge algo = new Merge();
-        int[] expect = {1, 2, 3, 4, 4};
+        int[] expect = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] result = algo.merge(
-                new int[] {1, 2},
-                new int[] {3, 4, 4}
+                new int[] {1, 2, 5, 6, 9},
+                new int[] {3, 4, 7, 8}
         );
         assertThat(result, is(expect));
     }

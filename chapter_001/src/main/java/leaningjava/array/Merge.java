@@ -5,25 +5,29 @@ import java.util.Arrays;
 public class Merge {
     public int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
-        for (int index = 0; index < left.length; index++) {
-            rsl[index] = left[index];
-        }
-        for (int index = 0; index < right.length; index++) {
-            rsl[left.length + index] = right[index];
-        }
-        SortSelected.sort(rsl);
 
+        int i = 0, j = 0;
+        for (int index = 0; index < rsl.length; index++) {
 
+            if (i > left.length - 1) {
+                rsl[index] = right[j];
+                j++;
+            } else if (j > right.length - 1) {
+                rsl[index] = left[i];
+                i++;
+            } else if (left[i] < right[j]) {
+                rsl[index] = left[i];
+                i++;
+            } else {
+                rsl[index] = right[j];
+                j++;
+            }
+        }
         return rsl;
     }
 
     public static void main(String[] args) {
-        Merge process = new Merge();
-        int[] rsl = process.merge(
-                new int[] {1, 3, 5},
-                new int[] {2, 4}
-        );
-        System.out.println(Arrays.toString(rsl));
+
     }
 }
 

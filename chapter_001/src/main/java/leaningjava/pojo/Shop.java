@@ -31,7 +31,7 @@ public class Shop {
 //            }
 //        }
 
-//        System.out.println();
+        System.out.println();
 //        System.out.println("Записываем  в ячейку с индексом 1 значение ячейки с индексом 2 и удаляем значение из ячейки с индексом 2");
 //        products[1] = products[2];
 //        products[2] = null;

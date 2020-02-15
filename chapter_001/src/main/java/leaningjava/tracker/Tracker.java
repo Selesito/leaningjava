@@ -88,12 +88,12 @@ public class Tracker {
         int count = 0;
         for (int i = 0; i < position; i++) {
             if (items[i] != null && items[i].getName().equals(key)) {
-                temp[i] = items[i];
+                temp[count] = items[i];
                 count++;
             }
         }
         Item[] all = new Item[count];
-        System.arraycopy(temp, 0, temp, 0, count);
+        System.arraycopy(temp, 0, all, 0, count);
         return all;
     }
 

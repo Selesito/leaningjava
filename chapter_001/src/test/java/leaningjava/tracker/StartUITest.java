@@ -37,10 +37,21 @@ public class StartUITest {
         tracker.add(item);
         String[] answers = {item.getId()};
 
-//        StartUI.deleteItem(new StubInput(answers), tracker);
+        //StartUI.deleteItem(new StubInput(answers), tracker);
         Item replaced = tracker.findById(item.getId());
         String result = null;
         assertThat(replaced, is(result));
     }
+
+    @Test
+    public void whenExit() {
+        StubInput input = new StubInput(
+                new String[] {"0"}
+        );
+        StubAction action = new StubAction();
+        new StartUI().init(input, new Tracker(), new UserAction[] {action });
+        assertThat(action.isCall(), is(true));
+    }
+
 }
 

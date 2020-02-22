@@ -1,6 +1,6 @@
 package leaningjava.tracker;
 
-public class AllItems implements UserAction {
+public class FindAllAction implements UserAction {
     @Override
     public String name() {
         return "=== Create a Show all items ====";

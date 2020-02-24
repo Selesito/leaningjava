@@ -1,9 +1,9 @@
 package leaningjava.tracker;
 
-public class FindByName implements UserAction {
-    @Override
-    public String name() {
-        return "=== Create a Find items by name ====";
+public class FindByName extends BaseAction {
+
+    protected FindByName(String name) {
+        super(name);
     }
 
     @Override

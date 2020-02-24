@@ -1,9 +1,9 @@
 package leaningjava.tracker;
 
-public class CreateAction implements UserAction {
-    @Override
-    public String name() {
-        return "=== Create a new Item ====";
+public class CreateAction extends BaseAction {
+
+    protected CreateAction(String name) {
+        super(name);
     }
 
     @Override

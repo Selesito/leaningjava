@@ -1,9 +1,9 @@
 package leaningjava.tracker;
 
-public class DeleteItem implements UserAction {
-    @Override
-    public String name() {
-        return "=== Create a Delete item ====";
+public class DeleteItem extends BaseAction {
+
+    protected DeleteItem(String name) {
+        super(name);
     }
 
     @Override

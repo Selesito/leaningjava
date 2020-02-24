@@ -38,7 +38,7 @@ public class FindByNameActionTest {
         tracker.add(item3);
         Item item4 = new Item("fix");
         tracker.add(item4);
-        FindByName act = new FindByName();
+        FindByName act = new FindByName("fix");
         act.execute(new StubInput(new String[] {"fix"}), tracker);
 
         String expect = new StringJoiner(System.lineSeparator(), "", System.lineSeparator())

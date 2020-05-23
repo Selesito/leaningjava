@@ -1,5 +1,7 @@
 package leaningjava.tracker;
 
+import java.util.ArrayList;
+
 public class FindAllAction extends BaseAction {
 
     protected FindAllAction(String name) {
@@ -8,9 +10,9 @@ public class FindAllAction extends BaseAction {
 
     @Override
     public boolean execute(Input input, Tracker tracker) {
-        Item[] items = tracker.findAll();
-        for (int i = 0; i < items.length; i++) {
-            System.out.println(items[i]);
+        ArrayList<Item> items = tracker.findAll();
+        for (int i = 0; i < items.size(); i++) {
+            System.out.println(items.get(i));
         }
         return true;
     }

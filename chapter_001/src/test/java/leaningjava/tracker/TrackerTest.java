@@ -27,6 +27,7 @@ public class TrackerTest {
         tracker.add(third);
         tracker.add(fourth);
         assertThat(tracker.delete(second.getId()), is(true));
+
     }
 
     @Test
@@ -40,7 +41,7 @@ public class TrackerTest {
         tracker.add(second);
         tracker.add(third);
         tracker.add(fourth);
-        int size = tracker.findByName("test2").length;
+        int size = tracker.findByName("test2").size();
         assertThat(size, is(2));
 
     }
@@ -56,7 +57,7 @@ public class TrackerTest {
         tracker.add(second);
         tracker.add(third);
         tracker.add(fourth);
-        int size = tracker.findAll().length;
+        int size = tracker.findAll().size();
         assertThat(size, is(4));
     }
 

@@ -1,9 +1,9 @@
 package leaningjava.tracker;
 
-public class ReplaceItem implements UserAction {
-    @Override
-    public String name() {
-        return "=== Create a Edit item ====";
+public class ReplaceItem extends BaseAction {
+
+    protected ReplaceItem(String name) {
+        super(name);
     }
 
     @Override
